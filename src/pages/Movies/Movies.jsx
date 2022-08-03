@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -83,5 +84,16 @@ const Movies = () => {
       <ToastContainer autoClose={3000} />
     </div>
   );
+};
+Movies.prototype = {
+  films: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      original_title: PropTypes.string.isRequired,
+      original_name: PropTypes.string.isRequired,
+      poster_path: PropTypes.string.isRequired,
+    })
+  ),
+  query: PropTypes.string.isRequired,
 };
 export default Movies;
