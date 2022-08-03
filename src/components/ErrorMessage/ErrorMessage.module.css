@@ -3,11 +3,12 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .title {
-  font-size: 24px;
+  font-size: 28px;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin-top: 20px;
 }

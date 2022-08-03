@@ -5,8 +5,8 @@ import Png from '../../icons/pngegg.png';
 const NotFound = () => {
   return (
     <div className={css.NotFound}>
-      <h1 className={css.NotFoundTitle}>Page not found</h1>
-      <img src={Png} alt="Error" width="450" />
+      <img src={Png} alt="Error" width="550" />
+      <h2 className={css.NotFoundTitle}>Page not found</h2>
     </div>
   );
 };
