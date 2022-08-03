@@ -41,7 +41,7 @@ const MovieDetails = () => {
   };
 
   const GoBack = () => {
-    navigate(location.state?.from ?? '/movies');
+    navigate(location.state?.from ?? '/');
   };
 
   const scrollToMoreBtn = () => {
