@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import api from '../../server/api';
 import { ToastContainer, toast } from 'react-toastify';
 
-import TrendingMovies from 'components/TrendingMovies';
+import MoviesList from 'components/MoviesList';
 import Title from 'components/Title';
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div>
       <Title />
-      <TrendingMovies movies={movies} />
+      <MoviesList films={movies} />
       <ToastContainer autoClose={3000} />
     </div>
   );

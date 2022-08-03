@@ -15,7 +15,7 @@ const SearchFilms = ({ hendelSubmit, hendelNameChange, name }) => {
         />
 
         <button className={css.SearchFormButton} type="submit">
-          <SearchIcon />
+          <SearchIcon className={css.SearchFormIcon} />
           <span className={css.SearchFormButtonLabel}>Search</span>
         </button>
       </form>

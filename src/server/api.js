@@ -15,8 +15,30 @@ async function fetchTrendingMovie() {
   return response.data;
 }
 
+async function fetchDetailsMovie(movieId) {
+  const response = await axios.get(`movie/${movieId}?api_key=${KEY}`);
+  return response.data;
+}
+
+async function fetchCastActors(movieId) {
+  const response = await axios.get(
+    `/movie/${movieId}/credits?api_key=${KEY}&language=en-US`
+  );
+  return response.data;
+}
+
+async function fetchReviews(movie_id) {
+  const response = await axios.get(
+    `/movie/${movie_id}/reviews?api_key=${KEY}&language=en-US&page=1`
+  );
+  return response.data;
+}
+
 const api = {
   fetchSearchFilms,
   fetchTrendingMovie,
+  fetchDetailsMovie,
+  fetchCastActors,
+  fetchReviews,
 };
 export default api;

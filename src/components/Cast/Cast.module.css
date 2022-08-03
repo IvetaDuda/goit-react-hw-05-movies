@@ -1,0 +1,27 @@
+.CastList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.img {
+  margin-bottom: 10px;
+}
+.defaultImg {
+  width: 210px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+.title {
+  min-width: 200px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.Character {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
